@@ -15,8 +15,8 @@ syntax region description start=/\~/ skip=/\v\\./ end=/\~/ contained
 syntax region BLOCK start=/{/ skip=/\s+/ end=/}/ contains=spokenWord,thoughtWord,codeWord,action,description
 
 highlight link spokenWord String
-highlight link thoughtWord Constant
-highlight link codeWord Comment
+hi thoughtWord ctermfg=red
+hi codeWord ctermfg=gray
 highlight link action function
 highlight link description Statement
 hi BLOCK guibg=#FF00FF ctermfg=magenta cterm=bold guifg=#00FF00
